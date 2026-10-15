@@ -1,7 +1,5 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- calling dtd  -->
 <!DOCTYPE observations SYSTEM "observations.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
 <observations>
 
     <observation>
@@ -45,12 +43,12 @@
     <observation>
         <id>3</id>
         <YEAR>2023</YEAR>
-        <lieu>
-            <id>3</id>
-            <nom>Orleans</nom>
+           <lieu>
+            <id>2</id>
+            <nom>Tours</nom>
             <position>
-                <X>20</X>
-                <Y>35</Y>
+                <X>15</X>
+                <Y>30</Y>
             </position>
         </lieu>
         <espece>
