@@ -1,10 +1,10 @@
-<!DOCTYPE observations SYSTEM "observations.dtd">
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
+
 <observations>
 
-
-<lieux  >
-       <lieu id="blois" >
+    <lieux>
+        <lieu id="blois">
             <nom>Blois</nom>
             <position>
                 <X>12</X>
@@ -12,14 +12,15 @@
             </position>
         </lieu>
 
-        <lieu id="tours" >
+        <lieu id="tours">
             <nom>Tours</nom>
             <position>
                 <X>15</X>
                 <Y>30</Y>
             </position>
         </lieu>
-        <lieu id="orleans" >
+
+        <lieu id="orleans">
             <nom>Orleans</nom>
             <position>
                 <X>20</X>
@@ -28,197 +29,168 @@
         </lieu>
     </lieux>
 
-        <especes >
-        <espece id="rat" >
-                    <nom>RAT</nom>
-            <description>Petit animal </description>
+    <especes>
+        <espece id="tigre">
+            <nom>tigre</nom>
+            <description>Animal sauvage</description>
         </espece>
-        </especes  >
 
+        <espece id="renard">
+            <nom>renard</nom>
+            <description>Petit animal sauvage</description>
+        </espece>
 
+        <espece id="rat">
+            <nom>RAT</nom>
+            <description>Petit animal</description>
+        </espece>
 
+        <espece id="loup">
+            <nom>LOUP</nom>
+            <description>Animal sauvage</description>
+        </espece>
 
+        <espece id="dauphin">
+            <nom>dauphin</nom>
+            <description>Animal aquatique</description>
+        </espece>
+
+        <espece id="vache">
+            <nom>vache</nom>
+            <description>Animal de ferme</description>
+        </espece>
+
+        <espece id="Oiseau">
+            <nom>Oiseau</nom>
+            <description>Animal avec des plumes</description>
+        </espece>
+
+        <espece id="lion">
+            <nom>lion</nom>
+            <description>Grand animal</description>
+        </espece>
+    </especes>
+
+    <!-- Observations -->
     <observation>
         <id>1</id>
         <YEAR>2024</YEAR>
-        <lieu  ref="blois" />
-      
-        <espece  ref="rat" />
+        <lieu ref="blois"/>
+        <espece ref="rat"/>
         <NBR>5</NBR>
     </observation>
 
     <observation>
         <id>2</id>
         <YEAR>2025</YEAR>
-        <lieu  ref="tours" />
-        <espece  ref="loup" />
+        <lieu ref="tours"/>
+        <espece ref="loup"/>
         <NBR>3</NBR>
     </observation>
 
     <observation>
         <id>3</id>
         <YEAR>2023</YEAR>
-        <lieu  ref="orleans" />
-        <espece  ref="dauphin" />
+        <lieu ref="orleans"/>
+        <espece ref="dauphin"/>
         <NBR>8</NBR>
     </observation>
 
     <observation>
         <id>4</id>
         <YEAR>2022</YEAR>
-        <lieu  ref="blois" />
-        <espece  ref="dauphin" />
+        <lieu ref="blois"/>
+        <espece ref="dauphin"/>
         <NBR>8</NBR>
     </observation>
 
     <observation>
-        <id>4</id>
+        <id>5</id>
         <YEAR>2022</YEAR>
-        <lieu  ref="blois" />
-        <espece  ref="vache" />
+        <lieu ref="blois"/>
+        <espece ref="vache"/>
         <NBR>6</NBR>
-    </observation>
-
-    <observation>
-        <id>5</id>
-        <YEAR>2024</YEAR>
-        <lieu  ref="tours" />
-        <espece  ref="vache" />
-        <NBR>6</NBR>
-    </observation>
-
-    <observation>
-        <id>5</id>
-        <YEAR>2024</YEAR>
-        <lieu  ref="orleans" />
-        <espece  ref="vache" />
-        <NBR>10</NBR>
     </observation>
 
     <observation>
         <id>6</id>
-        <YEAR>2023</YEAR>
-        <lieu  ref="orleans" />
-        <espece  ref="vache" />
-        <NBR>4</NBR>
+        <YEAR>2024</YEAR>
+        <lieu ref="tours"/>
+        <espece ref="vache"/>
+        <NBR>6</NBR>
     </observation>
 
     <observation>
         <id>7</id>
-        <YEAR>2025</YEAR>
-        <lieu  ref="orleans" />
-        <espece  ref="vache" />
-        <NBR>4</NBR>
-    </observation>
-
-    <observation>
-        <id>7</id>
-        <YEAR>2025</YEAR>
-        <lieu  ref="orleans" />
-        <espece>
-            <nom>Oiseau</nom>
-            <id>104</id>
-            <description>Animal avec des plumes</description>
-        </espece>
-        <NBR>12</NBR>
+        <YEAR>2024</YEAR>
+        <lieu ref="orleans"/>
+        <espece ref="vache"/>
+        <NBR>10</NBR>
     </observation>
 
     <observation>
         <id>8</id>
-        <YEAR>2022</YEAR>
-        <lieu  ref="tours" />
-        <espece>
-            <nom>lion</nom>
-            <id>101</id>
-            <description>grand animal </description>
-        </espece>
-        <NBR>7</NBR>
-    </observation>
-
-            </position>
-        </lieu>
-        <espece>
-            <nom>lion</nom>
-            <id>101</id>
-            <description>grand animal </description>
-        </espece>
-        <NBR>7</NBR>
+        <YEAR>2023</YEAR>
+        <lieu ref="orleans"/>
+        <espece ref="renard"/>
+        <NBR>4</NBR>
     </observation>
 
     <observation>
         <id>9</id>
         <YEAR>2025</YEAR>
-        <lieu>
-            <id>3</id>
-            <nom>Orleans</nom>
-            <position>
-                <X>20</X>
-                <Y>35</Y>
-            </position>
-        </lieu>
-        <espece>
-            <nom>cheval</nom>
-            <id>103</id>
-            <description>Animal </description>
-        </espece>
-        <NBR>9</NBR>
+        <lieu ref="orleans"/>
+        <espece ref="renard"/>
+        <NBR>4</NBR>
     </observation>
 
     <observation>
         <id>10</id>
-        <YEAR>2024</YEAR>
-        <lieu>
-            <id>1</id>
-            <nom>Blois</nom>
-            <position>
-                <X>12</X>
-                <Y>24</Y>
-            </position>
-        </lieu>
-        <espece>
-            <nom>tigre</nom>
-            <id>102</id>
-            <description>Animal sauvage</description>
-        </espece>
-        <NBR>2</NBR>
+        <YEAR>2025</YEAR>
+        <lieu ref="orleans"/>
+        <espece ref="vache"/>
+        <NBR>12</NBR>
     </observation>
 
     <observation>
         <id>11</id>
-        <YEAR>2023</YEAR>
-        <lieu>
-            <id>2</id>
-            <nom>Tours</nom>
-            <position>
-                <X>15</X>
-                <Y>30</Y>
-            </position>
-        </lieu>
-        <espece>
-            <nom>Oiseau</nom>
-            <id>104</id>
-            <description>Animal avec des plumes</description>
-        </espece>
-        <NBR>15</NBR>
+        <YEAR>2022</YEAR>
+        <lieu ref="tours"/>
+        <espece ref="lion"/>
+        <NBR>7</NBR>
     </observation>
 
     <observation>
         <id>12</id>
         <YEAR>2025</YEAR>
-        <lieu>
-            <id>3</id>
-            <nom>Orleans</nom>
-            <position>
-                <X>20</X>
-                <Y>35</Y>
-            </position>
-        </lieu>
-        <espece>
-            <nom>renard</nom>
-            <id>101</id>
-            <description>Petit  </description>
-        </espece>
+        <lieu ref="tours"/>
+        <espece ref="vache"/>
+        <NBR>9</NBR>
+    </observation>
+
+    <observation>
+        <id>13</id>
+        <YEAR>2024</YEAR>
+        <lieu ref="blois"/>
+        <espece ref="tigre"/>
+        <NBR>2</NBR>
+    </observation>
+
+    <observation>
+        <id>14</id>
+        <YEAR>2023</YEAR>
+        <lieu ref="tours"/>
+        <espece ref="Oiseau"/>
+        <NBR>15</NBR>
+    </observation>
+
+    <observation>
+        <id>15</id>
+        <YEAR>2025</YEAR>
+        <lieu ref="orleans"/>
+        <espece ref="renard"/>
         <NBR>11</NBR>
     </observation>
 
 </observations>
+```
