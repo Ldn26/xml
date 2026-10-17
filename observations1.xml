@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE observations SYSTEM "observations1.dtd">
+<!-- version 1 : chaque observation contient tout -->
+<observations>
+
+  <observation id="o1">
+    <espece id="e1">
+      <nom>chat</nom>
+      <description>petit animal de maison, il dort beaucoup et chasse les souris.</description>
+    </espece>
+    <lieu id="l1">
+      <nom>tours</nom>
+      <latitude>47.39</latitude>
+      <longitude>0.69</longitude>
+    </lieu>
+    <annee>2022</annee>
+    <nombre>35</nombre>
+  </observation>
+
+  <observation id="o2">
+    <espece id="e1">
+      <nom>chat</nom>
+      <description>petit animal de maison, il dort beaucoup et chasse les souris.</description>
+    </espece>
+    <lieu id="l1">
+      <nom>tours</nom>
+      <latitude>47.39</latitude>
+      <longitude>0.69</longitude>
+    </lieu>
+    <annee>2023</annee>
+    <nombre>40</nombre>
+  </observation>
+
+  <observation id="o3">
+    <espece id="e1">
+      <nom>chat</nom>
+      <description>petit animal de maison, il dort beaucoup et chasse les souris.</description>
+    </espece>
+    <lieu id="l1">
+      <nom>tours</nom>
+      <latitude>47.39</latitude>
+      <longitude>0.69</longitude>
+    </lieu>
+    <annee>2024</annee>
+    <nombre>42</nombre>
+  </observation>
+
+  <observation id="o4">
+    <espece id="e2">
+      <nom>chien</nom>
+      <description>animal fidele qui garde la maison et aime jouer dehors.</description>
+    </espece>
+    <lieu id="l2">
+      <nom>amboise</nom>
+      <latitude>47.41</latitude>
+      <longitude>0.98</longitude>
+    </lieu>
+    <annee>2022</annee>
+    <nombre>20</nombre>
+  </observation>
+
+  <observation id="o5">
+    <espece id="e2">
+      <nom>chien</nom>
+      <description>animal fidele qui garde la maison et aime jouer dehors.</description>
+    </espece>
+    <lieu id="l2">
+      <nom>amboise</nom>
+      <latitude>47.41</latitude>
+      <longitude>0.98</longitude>
+    </lieu>
+    <annee>2023</annee>
+    <nombre>18</nombre>
+  </observation>
+
+  <observation id="o6">
+    <espece id="e2">
+      <nom>chien</nom>
+      <description>animal fidele qui garde la maison et aime jouer dehors.</description>
+    </espece>
+    <lieu id="l2">
+      <nom>amboise</nom>
+      <latitude>47.41</latitude>
+      <longitude>0.98</longitude>
+    </lieu>
+    <annee>2024</annee>
+    <nombre>22</nombre>
+  </observation>
+
+  <observation id="o7">
+    <espece id="e3">
+      <nom>vache</nom>
+      <description>gros animal de la ferme qui mange de l herbe et donne du lait.</description>
+    </espece>
+    <lieu id="l3">
+      <nom>chinon</nom>
+      <latitude>47.17</latitude>
+      <longitude>0.24</longitude>
+    </lieu>
+    <annee>2022</annee>
+    <nombre>60</nombre>
+  </observation>
+
+  <observation id="o8">
+    <espece id="e3">
+      <nom>vache</nom>
+      <description>gros animal de la ferme qui mange de l herbe et donne du lait.</description>
+    </espece>
+    <lieu id="l3">
+      <nom>chinon</nom>
+      <latitude>47.17</latitude>
+      <longitude>0.24</longitude>
+    </lieu>
+    <annee>2023</annee>
+    <nombre>55</nombre>
+  </observation>
+
+  <observation id="o9">
+    <espece id="e3">
+      <nom>vache</nom>
+      <description>gros animal de la ferme qui mange de l herbe et donne du lait.</description>
+    </espece>
+    <lieu id="l3">
+      <nom>chinon</nom>
+      <latitude>47.17</latitude>
+      <longitude>0.24</longitude>
+    </lieu>
+    <annee>2024</annee>
+    <nombre>50</nombre>
+  </observation>
+
+  <observation id="o10">
+    <espece id="e4">
+      <nom>mouton</nom>
+      <description>animal de la ferme avec de la laine, il vit en troupeau.</description>
+    </espece>
+    <lieu id="l3">
+      <nom>chinon</nom>
+      <latitude>47.17</latitude>
+      <longitude>0.24</longitude>
+    </lieu>
+    <annee>2022</annee>
+    <nombre>30</nombre>
+  </observation>
+
+  <observation id="o11">
+    <espece id="e4">
+      <nom>mouton</nom>
+      <description>animal de la ferme avec de la laine, il vit en troupeau.</description>
+    </espece>
+    <lieu id="l3">
+      <nom>chinon</nom>
+      <latitude>47.17</latitude>
+      <longitude>0.24</longitude>
+    </lieu>
+    <annee>2023</annee>
+    <nombre>12</nombre>
+  </observation>
+
+  <observation id="o12">
+    <espece id="e4">
+      <nom>mouton</nom>
+      <description>animal de la ferme avec de la laine, il vit en troupeau.</description>
+    </espece>
+    <lieu id="l3">
+      <nom>chinon</nom>
+      <latitude>47.17</latitude>
+      <longitude>0.24</longitude>
+    </lieu>
+    <annee>2024</annee>
+    <nombre>0</nombre>
+  </observation>
+
+</observations>

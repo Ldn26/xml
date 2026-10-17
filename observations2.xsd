@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- la racine -->
+  <xs:element name="suivi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lieux">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lieu" type="fiche_lieu" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="especes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="espece" type="fiche_espece" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="observations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="observation" type="fiche_observation" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- les id sont uniques -->
+    <xs:key name="cle_lieu">
+      <xs:selector xpath="lieux/lieu"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+    <xs:key name="cle_espece">
+      <xs:selector xpath="especes/espece"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+
+    <!-- une ref doit pointer vers un id qui existe -->
+    <xs:keyref name="ref_lieu" refer="cle_lieu">
+      <xs:selector xpath="observations/observation/lieu"/>
+      <xs:field xpath="@ref"/>
+    </xs:keyref>
+    <xs:keyref name="ref_espece" refer="cle_espece">
+      <xs:selector xpath="observations/observation/espece"/>
+      <xs:field xpath="@ref"/>
+    </xs:keyref>
+
+    <!-- une seule observation par espece, par lieu et par annee -->
+    <xs:unique name="une_par_an">
+      <xs:selector xpath="observations/observation"/>
+      <xs:field xpath="espece/@ref"/>
+      <xs:field xpath="lieu/@ref"/>
+      <xs:field xpath="annee"/>
+    </xs:unique>
+  </xs:element>
+
+  <!-- un lieu decrit en entier -->
+  <xs:complexType name="fiche_lieu">
+    <xs:sequence>
+      <xs:element name="nom" type="texte"/>
+      <xs:element name="latitude" type="latitude"/>
+      <xs:element name="longitude" type="longitude"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <!-- une espece decrite en entier -->
+  <xs:complexType name="fiche_espece">
+    <xs:sequence>
+      <xs:element name="nom" type="texte"/>
+      <xs:element name="description" type="texte"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="fiche_observation">
+    <xs:sequence>
+      <xs:element name="espece">
+        <xs:complexType>
+          <xs:attribute name="ref" type="xs:IDREF" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="lieu">
+        <xs:complexType>
+          <xs:attribute name="ref" type="xs:IDREF" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="annee" type="annee"/>
+      <xs:element name="nombre" type="xs:nonNegativeInteger"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <!-- les REGLES  de valeurs -->
+
+  <!-- Le texte doit contenir au moins un caractère -->
+  <xs:simpleType name="texte">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Lannee doit être supérieure ou égale à 1900 -->
+  <xs:simpleType name="annee">
+    <xs:restriction base="xs:gYear">
+      <xs:minInclusive value="1900"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- La latitude doit être comprise entre -90 et 90 -->
+  <xs:simpleType name="latitude">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="-90"/>
+      <xs:maxInclusive value="90"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- La longitude doit être comprise entre -180 et 180 -->
+  <xs:simpleType name="longitude">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="-180"/>
+      <xs:maxInclusive value="180"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
+
+
