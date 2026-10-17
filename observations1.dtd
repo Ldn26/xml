@@ -1,0 +1,19 @@
+<!-- regles de la version 1 -->
+<!ELEMENT observations (observation+)>
+
+<!ELEMENT observation (espece, lieu, annee, nombre)>
+<!ATTLIST observation id ID #REQUIRED>
+
+<!-- l espece et le lieu se repetent, donc id n est pas de type ID -->
+<!ELEMENT espece (nom, description)>
+<!ATTLIST espece id NMTOKEN #REQUIRED>
+
+<!ELEMENT lieu (nom, latitude, longitude)>
+<!ATTLIST lieu id NMTOKEN #REQUIRED>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
